@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mobile Responsibe Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-white">
+        <a class="nav-item" href="#">View Highscores</a>
+        <div class="nav-item navbar-right">Timer</div>
+    </nav>
+    <br><br>
+    
+    <div class="container">
+        <div id="intro">
+            <div class="row">
+                <header class="header col-sm-8 text-center">
+                    <h1>Coding Quiz Challenge</h1>
+                </header>
+            </div>
+
+            <div class="row">
+                <main class="col-sm-8 text-center">
+                    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
+                    <button class="submitButton">Start Quiz</button>
+                </main>
+            </div>
+        </div>
+
+        <div id="0" class="hide question">
+            <div class="row">
+                <form class="header col-sm-8" id="answerChoices">
+                    <h3>1. What is the correct syntax for targetting the following using JS:<br>div class="hello"</h3>
+                    <input type="radio" name="choice" id="a1" name="q1Answer" value="wrong"> 1. document.getElementById("hello")</button>
+                    <br>
+                    <input type="radio" name="choice" id="b1" name="q1Answer" value="wrong"> 2. document.querySelector("#hello")</button>
+                    <br>
+                    <input type="radio" name="choice" id="c1" name="q1Answer" value="correct"> 3. document.querySelector(".hello")</button>
+                    <br>
+                    <input type="radio" name="choice" id="d1" name="q1Answer" value="wrong"> 4. document.getElementById(".hello")</button>
+                    <br><br>
+                    <button class="submitButton">Submit answer</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="1" class="hide question">
+            <div class="row">
+                <header class="header col-sm-8 ">
+                    <h3>2. What is the correct syntax for targetting the following using JS: 'div class="hello"'
+                    </h3>
+                </header>
+                <form class="col-sm-8" id="answerChoices">
+                    <input type="radio" class="choice" id="a1"> 1. document.getElementById("hello")</button>
+                    <br>
+                    <input type="radio" class="choice" id="b1"> 2. document.querySelector("#hello")</button>
+                    <br>
+                    <input type="radio" class="choice" id="c1"> 3. document.querySelector(".hello")</button>
+                    <br>
+                    <input type="radio" class="choice" id="d1"> 3. document.getElementById(".hello")</button>
+                    <button class="submitButton">Submit answer</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="hide">
+            <div class="row">
+                <div class="col-sm-8">
+                    <hr>
+                    <p id="answer">Correct!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script1.js"></script>
+</body>
+</html>

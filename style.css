@@ -1,0 +1,31 @@
+.hide {
+    display: none;
+}
+
+nav {
+    width: 100%;
+}
+
+header {
+    color: red;
+
+}
+.col-sm-8 {
+    display: block;
+    margin: auto;
+}
+/*.header {
+    margin-bottom: ;
+}*/
+.choice {
+    margin-top: 5px;
+}
+    
+
+@media screen and (max-width: 575px) {
+    .container {
+        display: block;
+        width: 100%;
+        margin-left: !20px;
+        margin-right: !20px;
+    }

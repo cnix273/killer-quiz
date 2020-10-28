@@ -1,0 +1,24 @@
+Activity 5: Setting Attributes
+
+Aim: Add hrefs to a tags, srcs to img tags, and add styling to html elements using JavaScript.
+
+//Get all img elements within the document using "document.querySelectorAll("img") and add them to an array
+Var image = document.querySelectorAll("img");
+
+//Target each image in the array using bracket notation - image[0] - and set the src for each image in the array using .setAttribute("src", "https....");
+
+//Target each image in the array using bracket notation - image[0] - and set the alt attribute for each image in the array using .setAttribute("alt", "...");
+
+//Get all anchor elements within the document using "document.querySelectorAll("a") and add them to an array
+
+//Target each anchor element in the array using black notation - link[0] - and set the href for each link in the array using .setAttribute("href", "https....");
+
+//Get all h4 elements within the document using "document.querySelectorAll("h4") and add them to an array
+
+//Target each h4 element in the array using block notation and set the text content using ".textContent = ' ' "
+
+//Create a for loop that runs for as long as i < the length of the h4 array
+
+//Within the loop, target each of the h4 elements using black notation with i and set the font color to red using ".setAttribute("style", "color: red");
+
+//Within the loop, target each of the h4 elements using black notation with i and set the font size to 20px using ".setAttribute("style", "margin: 20px");
