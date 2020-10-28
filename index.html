@@ -39,33 +39,31 @@
         </div>
 
         <div class="row" id="quiz" style="display: none;">
-            <header class="header col-sm-8" id="question">
-                <h3></h3>
+            <header class="header col-sm-8">
+                <h3 id="question"></h3>
             </header>
             <form class="col-sm-8" id="answerChoices">
-                <input type="submit" class="choice" id="a"></input>
+                <input type="button" class="choice" id="a" onclick="checkAnswer(this.id)"></input>
                 <br>
-                <input type="submit" class="choice" id="b"></input>
+                <input type="button" class="choice" id="b" onclick="checkAnswer(this.id)"></input>
                 <br>
-                <input type="submit" class="choice" id="c"></input>
+                <input type="button" class="choice" id="c" onclick="checkAnswer(this.id)"></input>
                 <br>
-                <input type="submit" class="choice" id="d"></input>
+                <input type="button" class="choice" id="d" onclick="checkAnswer(this.id)"></input>
             </form>
         </div>
 
-        <div class="hide">
-            <div class="row">
-                <div class="col-sm-8">
-                    <hr>
-                    <p id="answer">Correct!</p>
-                </div>
+        <div class="row">
+            <div class="col-sm-8" id="answer">
+                <hr>
+                <p id="correct"></p>
             </div>
         </div>
 
         <div id="score" style="display: none;"></div>
 
     </div>
-    <script src="./script1.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
