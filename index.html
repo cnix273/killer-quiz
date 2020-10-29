@@ -43,14 +43,38 @@
                 <h3 id="question"></h3>
             </header>
             <form class="col-sm-8" id="answerChoices">
-                <input type="button" class="choice" id="a" onclick="checkAnswer(this.id)"></input>
+                <input type="button" class="choice" id="a"></input>
                 <br>
-                <input type="button" class="choice" id="b" onclick="checkAnswer(this.id)"></input>
+                <input type="button" class="choice" id="b"></input>
                 <br>
-                <input type="button" class="choice" id="c" onclick="checkAnswer(this.id)"></input>
+                <input type="button" class="choice" id="c"></input>
                 <br>
-                <input type="button" class="choice" id="d" onclick="checkAnswer(this.id)"></input>
+                <input type="button" class="choice" id="d"></input>
             </form>
+        </div>
+
+        <div id="outro" style="display: none;">
+            <div class="row">
+                <header class="header col-sm-8 text-center">
+                    <h1>All done!</h1>
+                </header>
+            </div>
+
+            <div class="row">
+                <main class="col-sm-8 text-center">
+                    <p></p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                Enter initials:
+                            </div>
+                            <form class="form-group col-sm-4" id="initials">
+                                <input type="text">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </form>
+                </main>
+            </div>
         </div>
 
         <div class="row">
