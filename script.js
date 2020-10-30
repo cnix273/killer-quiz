@@ -1,5 +1,5 @@
 var start = document.getElementById("startButton");
-var timer = document.getElementById("timer");
+var counter = document.getElementById("timer");
 var intro = document.getElementById("intro");
 var quiz = document.getElementById("quiz");
 var question = document.getElementById("question");
@@ -7,10 +7,13 @@ var choiceA = document.getElementById("a");
 var choiceB = document.getElementById("b");
 var choiceC = document.getElementById("c");
 var choiceD = document.getElementById("d");
-var answer = document.getElementById("correct");
+var answer = document.getElementById("answer");
+var result = document.getElementById("result");
 var outro = document.getElementById("outro");
 var score = document.getElementById("score");
 var choices = document.querySelector("#answerChoices");
+var finalScore = document.querySelector("#finalScore");
+var submitScore = document.getElementById("submitScore");
 
 var questionIndex = 0;
 score = 0;
@@ -62,9 +65,7 @@ function renderQuestion() {
         choiceC.value = questions[questionIndex].choiceC;
         choiceD.value = questions[questionIndex].choiceD;
     }
-};
-
-
+};/*
 
 var seconds = 60;
 
@@ -97,12 +98,38 @@ function time(minutes, seconds) {
 
     }
     countdown();
+}*/
+
+var seconds = 76;
+
+function time(seconds) {
+
+    function countdown() {
+        var timeout;
+
+        seconds--;
+
+        counter.innerHTML = "Timer: " + String(seconds);
+        
+        if (seconds > 0) {
+            timeout = setTimeout(countdown, 1000);
+        }
+
+        else {
+            gameOver();
+            return;
+        }
+    }
+    countdown();
 }
 
 function gameOver() {
     quiz.style.display = "none";
+    result.style.display = "none";
     outro.style.display = "block";
-};
+
+    finalScore.innerHTML = "Your final score is " + score + "/5!";
+ };
 
 start.addEventListener("click", function() {
     intro.style.display = "none";
@@ -110,7 +137,7 @@ start.addEventListener("click", function() {
 
 
     renderQuestion();
-    time(2);
+    time(seconds);
 });
 
 choices.addEventListener("click", function(event) {
@@ -131,4 +158,8 @@ choices.addEventListener("click", function(event) {
         gameOver();
     }
     console.log(score);
+});
+
+submitScore.addEventListener("click", function() {
+
 });

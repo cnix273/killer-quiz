@@ -17,7 +17,7 @@
 
     <nav class="navbar navbar-dark bg-white">
         <a class="nav-item" href="#">View Highscores</a>
-        <div class="nav-item navbar-right" id="timer">Timer</div>
+        <div class="nav-item navbar-right" id="timer">Timer: 75</div>
     </nav>
     <br><br>
     
@@ -25,13 +25,13 @@
         
         <div id="intro">
             <div class="row">
-                <header class="header col-sm-8 text-center">
+                <header class="header col-md-8 text-center">
                     <h1>Coding Quiz Challenge</h1>
                 </header>
             </div>
 
             <div class="row">
-                <main class="col-sm-8 text-center">
+                <main class="col-md-8 text-center">
                     <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
                     <button id="startButton">Start Quiz</button>
                 </main>
@@ -39,10 +39,10 @@
         </div>
 
         <div class="row" id="quiz" style="display: none;">
-            <header class="header col-sm-8">
+            <header class="header col-md-8">
                 <h3 id="question"></h3>
             </header>
-            <form class="col-sm-8" id="answerChoices">
+            <form class="col-md-8" id="answerChoices">
                 <input type="button" class="choice" id="a"></input>
                 <br>
                 <input type="button" class="choice" id="b"></input>
@@ -55,32 +55,40 @@
 
         <div id="outro" style="display: none;">
             <div class="row">
-                <header class="header col-sm-8 text-center">
+                <header class="header col-md-8" id="allDone">
                     <h1>All done!</h1>
+                    <p id="finalScore"></p>
                 </header>
             </div>
 
+            <div class="row" id="initials">
+                <form class="form-group col-md-8" id="form">
+                    Enter initials:
+                    <input type="text">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="Highscores" style="display: none;">
             <div class="row">
-                <main class="col-sm-8 text-center">
-                    <p></p>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                Enter initials:
-                            </div>
-                            <form class="form-group col-sm-4" id="initials">
-                                <input type="text">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                    </form>
-                </main>
+                <header class="header col-md-8">
+                    <h1 id="highscoreList">Highscores</h1>
+                </header>
+            </div>
+
+            <div class="row" id="initials">
+                <form class="form-group col-md-8" id="form">
+                    <button class="btn">Go Back</button>
+                    <button class="btn">Clear Highscores</button>
+                </form>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-8" id="answer">
+            <div class="col-md-8" id="result">
                 <hr>
-                <p id="correct"></p>
+                <p id="answer"></p>
             </div>
         </div>
 

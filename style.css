@@ -10,17 +10,27 @@ header {
     color: red;
 
 }
-.col-sm-8 {
+
+.col-md-8 {
     display: block;
     margin: auto;
 }
-/*.header {
-    margin-bottom: ;
-}*/
+
 .choice {
     margin-top: 5px;
 }
+#finalScore {
+    font-weight: bold;
+}
     
+/*@media screen and (max-width: 767px) {
+    #form {
+        display: block;
+        width: 100%;
+        margin-left: !20px;
+        margin-right: !20px;
+    }
+}*/
 
 @media screen and (max-width: 575px) {
     .container {
@@ -29,3 +39,4 @@ header {
         margin-left: !20px;
         margin-right: !20px;
     }
+}
