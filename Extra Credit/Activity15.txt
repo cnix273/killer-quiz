@@ -1,5 +1,0 @@
-Activity 15: Other Events
-
-Aim: Create a webpage that allows
-
-//Add 2 input elements as children of the form in the html documents, one for the bill total, and one for the tip percentage

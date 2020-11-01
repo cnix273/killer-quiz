@@ -1,14 +1,21 @@
-.hide {
-    display: none;
-}
-
 nav {
     width: 100%;
 }
 
 header {
-    color: red;
+    color: rgb(86, 197, 231);
+}
 
+.btn {
+    background-color: rgb(86, 197, 231);
+}
+
+#link {
+    color: green;
+}
+
+a:hover {
+    color: rebeccapurple;
 }
 
 .col-md-8 {
@@ -19,9 +26,12 @@ header {
 .choice {
     margin-top: 5px;
 }
+
 #finalScore {
     font-weight: bold;
 }
+
+
     
 /*@media screen and (max-width: 767px) {
     #form {
