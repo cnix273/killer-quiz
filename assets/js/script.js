@@ -45,19 +45,19 @@ var questions = [
     choiceD: 'boolean',
     correctAnswer: 'd'
     },
-    {question: '3. What is the name of the following method for accessing values in an object: "var x = object.item;',
+    {question: '3. What is the name of the following method for accessing values in an object: "var x = object.item;"',
     choiceA: 'period notation',
     choiceB: 'object notation',
     choiceC: 'bracket notation',
     choiceD: 'dot notation',
-    correctAnswer: 'c'
-    },
-    {question: '4. What is the correct syntax for targetting the following using JS: div class="hello"',
-    choiceA: 'document.getElementById("hello")',
-    choiceB: 'document.querySelector("#hello")',
-    choiceC: 'document.querySelector(".hello")',
-    choiceD: 'document.getElementById(".hello")',
     correctAnswer: 'd'
+    },
+    {question: '4. What kind of library is jQuery?',
+    choiceA: 'JavaScript',
+    choiceB: 'Bootstrap',
+    choiceC: 'HTML',
+    choiceD: 'CSS',
+    correctAnswer: 'a'
     },
     {question: '5. What is the correct syntax for targetting the following using JS: div class="hello"',
     choiceA: 'document.getElementById("hello")',
@@ -78,7 +78,6 @@ function renderQuestion() {
         choiceD.value = questions[questionIndex].choiceD;
     }
 };
-
 
 // Set timer
 function time(seconds) {
@@ -127,6 +126,20 @@ function gameOver() {
  var highscore4 = document.getElementById("highscore4");
  var highscore5 = document.getElementById("highscore5");
 
+ var initials1 = localStorage.getItem(initials1);
+ var initials2 = localStorage.getItem(initials2);
+ var initials3 = localStorage.getItem(initials3);
+ var initials4 = localStorage.getItem(initials4);
+ var initials5 = localStorage.getItem(initials5);
+
+ var score1 = localStorage.getItem(score1);
+ var score2 = localStorage.getItem(score2);
+ var score3 = localStorage.getItem(score3);
+ var score4 = localStorage.getItem(score4);
+ var score5 = localStorage.getItem(score5);
+
+ console.log(initials1);
+
  // Add score and initials to highscore list
 function highscore() {
     intro.style.display = "none";
@@ -136,18 +149,6 @@ function highscore() {
     highscorePage.style.display = "block";
     counter.style.display = "none";
     link.style.display = "none";
-
-    var initials1 = localStorage.getItem(initials1);
-    var initials2 = localStorage.getItem(initials2);
-    var initials3 = localStorage.getItem(initials3);
-    var initials4 = localStorage.getItem(initials4);
-    var initials5 = localStorage.getItem(initials5);
-   
-    var score1 = localStorage.getItem(score1);
-    var score2 = localStorage.getItem(score2);
-    var score3 = localStorage.getItem(score3);
-    var score4 = localStorage.getItem(score4);
-    var score5 = localStorage.getItem(score5);
 
     var initials = document.getElementById("initials").value;
 
@@ -230,27 +231,6 @@ function highscore() {
         initials5 = initials.toUpperCase();
         localStorage.setItem("score5", score5)
         localStorage.setItem("initials5", initials5)
-        highscore5.innerText = "5. " + initials5 + " - " + score5;
-        return;
-    }
-
-    if (score1 !== null && score < score1) {
-        highscore1.innerText = "1. " + initials1 + " - " + score1;
-        return;
-    }
-    if (score2 !== null && score < score2) {
-        highscore2.innerText = "2. " + initials2 + " - " + score2;
-        return;
-    }
-    if (score3 !== null && score < score3) {
-        highscore3.innerText = "1=3. " + initials3 + " - " + score3;
-        return;
-    }
-    if (score4 !== null && score < score4) {
-        highscore4.innerText = "4. " + initials4 + " - " + score4;
-        return;
-    }
-    if (score5 !== null && score < score5) {
         highscore5.innerText = "5. " + initials5 + " - " + score5;
         return;
     }

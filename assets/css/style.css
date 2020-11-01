@@ -11,11 +11,11 @@ header {
 }
 
 #link {
-    color: green;
+    color: rebeccapurple;
 }
 
-a:hover {
-    color: rebeccapurple;
+#link:hover {
+    color: purple;
 }
 
 .col-md-8 {
@@ -30,17 +30,6 @@ a:hover {
 #finalScore {
     font-weight: bold;
 }
-
-
-    
-/*@media screen and (max-width: 767px) {
-    #form {
-        display: block;
-        width: 100%;
-        margin-left: !20px;
-        margin-right: !20px;
-    }
-}*/
 
 @media screen and (max-width: 575px) {
     .container {

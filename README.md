@@ -16,13 +16,22 @@ Clone the repository from github.
 
 **Technologies Used**
 * HTML - Used to create the structure of the site
+* Bootstrap - CSS, JS, & HTML library used to ass style and functionality including the grid layout and responsiveness
 * CSS - Used to style the HTML Elements
 * JavaScript - Used to make the site dynamic
 * GitHub - Hosts the repository that can be deployed to GitHub Pages
 
-The repository includes the index.html, script.js, and style.css. Repository structure must be maintained for proper usage of the index.html file.
+The repository includes the index.html, script.js, and style.css files and the "assets" directory, which runs adjacent. Within the asset directory are the "css", "js", and "images" directories. The "css" directory contains the style.css file, the "js" directory contains the script.js file, and the "images" directory contains three image files.
+
+Repository structure must be maintained for proper usage of the index.html file.
 
 Deployed application: https://cnix273.github.io/killer-quiz/.
+
+**The following images show web application apperance and functionality:**
+![Site Appearance 1](https://github.com/cnix273/killer-quiz/blob/main/assets/images/Screenshot1.png)
+![Site Appearance 2](https://github.com/cnix273/killer-quiz/blob/main/assets/images/Screenshot2.png)
+![Site Appearance 3](https://github.com/cnix273/killer-quiz/blob/main/assets/images/Screenshot3.png)
+![Site Appearance 4](https://github.com/cnix273/killer-quiz/blob/main/assets/images/Screenshot4.png)
 
 ## Credits
 
